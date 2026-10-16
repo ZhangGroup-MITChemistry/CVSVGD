@@ -1,0 +1,13 @@
+# Packaging / editable-install metadata
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+._*

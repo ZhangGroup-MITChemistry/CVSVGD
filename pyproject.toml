@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvsvgd"
+version = "0.1.0"
+description = "SVGD in collective-variable space with parallel sampling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "parsl",
+]
+
+[project.optional-dependencies]
+openmm = ["openmm"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["CVSVGD*"]
+
+[project]
+license = "MIT"
+license-files = ["LICENSE"]

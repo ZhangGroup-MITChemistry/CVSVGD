@@ -16,7 +16,7 @@ mkdir -p "$HOME/.local/src" && cd "$HOME/.local/src"
 
 Then run the one-liner:
 ```bash
-git clone https://github.com/<USER>/<REPO>.git cvsvgd && cd cvsvgd && pip install -e .
+git clone https://github.com/ZhangGroup-MITChemistry/CVSVGD.git cvsvgd && cd cvsvgd && pip install -e .
 ```
 
 A pypi install will be available soon.

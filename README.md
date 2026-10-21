@@ -39,29 +39,6 @@ To use with OpenMM, define your CVs (`OMMCVDef`), simulation configuration with 
 | `examples/alanine_tripeptide/` | OpenMM, alanine tripeptide |
  
 Can be extended to hypothetically use any sampler, with a minimal example given in `examples/double_well_toy_model/`. A more detailed guide on how to do this will be included in the future.
-
-## License
-MIT License
-
-Copyright (c) 2026 ZhangGroup-MITChemistry
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
  
 ## Citation
 Riveros, I.; Bin, Z. Collective-Variable Stein Variational Gradient Descent for Free Energy Surface Exploration, 2026. https://arxiv.org/abs/2610.27429v1

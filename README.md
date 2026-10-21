@@ -64,3 +64,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  
 ## Citation
+Riveros, I.; Bin, Z. Collective-Variable Stein Variational Gradient Descent for Free Energy Surface Exploration, 2026. https://arxiv.org/abs/2610.27429v1

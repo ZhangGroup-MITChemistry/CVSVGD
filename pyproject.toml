@@ -12,6 +12,8 @@ dependencies = [
     "torch",
     "parsl",
 ]
+license = "MIT"
+license-files = ["LICENSE"]
 
 [project.optional-dependencies]
 openmm = ["openmm"]
@@ -20,6 +22,3 @@ dev = ["pytest"]
 [tool.setuptools.packages.find]
 include = ["CVSVGD*"]
 
-[project]
-license = "MIT"
-license-files = ["LICENSE"]

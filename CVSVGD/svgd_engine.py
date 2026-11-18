@@ -90,6 +90,7 @@ class SVGDEngine:
         if "lr" not in self._optim_kwarg and "lr" not in getattr(self._optim_fac, "keywords", {}) or {}:
             self._optim_kwarg.setdefault("lr", self.svgd_conf.svgd_step_size)
         self.optimizer = self._optim_fac([self.cv_state.particles], **self._optim_kwarg)
+        self.gamma_langevin:float = float(optimizer.param_groups[0]['lr'])
 
         self.beta_svgd = 1 / (self.svgd_conf.svgd_temp * GAS_CONSTANT)
 
@@ -153,6 +154,9 @@ class SVGDEngine:
 
             t_s = time.time()
             phi = compute_phi(grad_logp, self.cv_state, self.svgd_conf.kernel_func)
+            if self.svgd_conf.langevin_reg > 0:
+                l_lam = self.svgd_conf.langevin_reg
+                phi = phi  - l_lam*self.beta_svgd*mean_force_res.mean_forces + ((2*l_lam/self.gamma_langevin)**0.5)*torch.randn_like(phi)
             ksd = None
             if self.svgd_conf.compute_ksd:
                 ksd = compute_ksd(grad_logp, self.cv_state, self.svgd_conf.kernel_func, self.svgd_conf.bw_ksd)

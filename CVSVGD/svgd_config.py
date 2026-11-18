@@ -19,6 +19,7 @@ class SVGDConfig:
         kernel_func: KernelBase|None = None,
         compute_ksd: bool = False,
         bw_ksd: float = 1.0,
+        langevin_reg: float = 0.0
         log_file: str|None = None,
         device: torch.device = torch.device("cuda" if torch.cuda.is_available() else "cpu"),
         dtype: torch.dtype = torch.float32,
@@ -40,3 +41,4 @@ class SVGDConfig:
         self.bw_ksd:float = bw_ksd
         self.log_file:str|None = log_file
         self.svgd_log_type:str = 'table' if log_file is None else 'csv'
+        self.langevin_reg:float = langevin_reg
